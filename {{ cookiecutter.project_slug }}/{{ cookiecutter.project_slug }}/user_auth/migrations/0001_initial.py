@@ -2,7 +2,7 @@
 
 from django.db import migrations, models
 
-import essay_perfect.accounts.models
+import {{ cookiecutter.project_slug }}.user_auth.models
 
 
 class Migration(migrations.Migration):
@@ -90,7 +90,7 @@ class Migration(migrations.Migration):
                 "abstract": False,
             },
             managers=[
-                ("objects", essay_perfect.accounts.models.UserManager()),
+                ("objects", {{ cookiecutter.project_slug }}.user_auth.models.UserManager()),
             ],
         ),
     ]

@@ -1,6 +1,6 @@
 import factory
 
-from essay_perfect.accounts import models
+from {{cookiecutter.project_slug}}.user_auth import models
 
 
 class User(factory.django.DjangoModelFactory):

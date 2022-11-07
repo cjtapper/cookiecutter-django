@@ -1,8 +1,8 @@
 from django.contrib.auth.hashers import check_password
 from django.test import SimpleTestCase, TestCase
 
-from essay_perfect.accounts.models import User
-from essay_perfect.accounts.tests import factories
+from {{ cookiecutter.project_slug }}.user_auth.models import User
+from {{ cookiecutter.project_slug }}.user_auth.tests import factories
 
 
 class UserManagerTests(TestCase):

@@ -76,7 +76,7 @@ SECRET_KEY = env_var(
     "DJANGO_SECRET_KEY",
     default="django-insecure--zs(!*1q))g1q#jaxtzqyzd6pqz!9b7-_!9o9c)-2g52pd%+h@",
 )
-DEBUG = env_bool("DJANGO_DEBUG", cast=bool, default=False)
+DEBUG = env_bool("DJANGO_DEBUG", default=False)
 
 ALLOWED_HOSTS = env_list("DJANGO_ALLOWED_HOSTS", default=[])
 
