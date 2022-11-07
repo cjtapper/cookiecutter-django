@@ -2,6 +2,7 @@ black
 dj-database-url
 django-debug-toolbar
 django[argon2]~=4.1
+factory-boy
 flake8
 flake8-bugbear
 gunicorn
