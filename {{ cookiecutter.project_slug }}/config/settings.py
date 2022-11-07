@@ -105,7 +105,7 @@ INTERNAL_IPS = env_list("DJANGO_INTERNAL_IPS", default=[])
 
 INSTALLED_APPS = [
     # First Party
-    "{{ cookiecutter.project_slug }}.authentication",
+    "{{ cookiecutter.project_slug }}.user_auth",
     # Third Party
     "debug_toolbar",
     # Contrib
@@ -247,7 +247,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL = "authentication.User"
+AUTH_USER_MODEL = "user_auth.User"
 
 PASSWORD_HASHERS = [
     "django.contrib.auth.hashers.Argon2PasswordHasher",
