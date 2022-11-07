@@ -1,0 +1,17 @@
+black
+dj-database-url
+django-debug-toolbar
+django[argon2]~=4.1
+flake8
+flake8-bugbear
+gunicorn
+ipdb
+ipython
+isort
+pip-tools
+pre-commit
+pytest
+pytest-django
+pytest-randomly
+rich
+whitenoise
